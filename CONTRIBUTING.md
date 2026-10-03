@@ -22,6 +22,7 @@
 | Статьи терминала и русские запросы к ним | `src/terminal/01_…txt` … `15_…txt` |
 | Заголовок терминала | `src/terminal/00_header.txt` |
 | «Неизвестный запрос» и ответы на чит-коды | `src/terminal/responses.txt` |
+| Субтитры к голосу по радио (начало игры) | `package/BepInEx/plugins/IronLungRu/subtitles.txt` |
 | Размер шрифта отдельных надписей | `package/BepInEx/Translation/ru/Text/resizer.txt` |
 | Записка (картинка) | `package/BepInEx/Translation/ru/Texture/notebookpaperbg […].png`, текст для справки — `imgText.txt` |
 

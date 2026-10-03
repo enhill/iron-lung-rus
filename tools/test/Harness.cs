@@ -73,6 +73,17 @@ public class Harness : BaseUnityPlugin
         }
     }
 
+    static string CurrentSubtitle()
+    {
+        foreach (MonoBehaviour mb in Resources.FindObjectsOfTypeAll<MonoBehaviour>())
+        {
+            if (mb.GetType().Name != "IronLungRu") continue;
+            System.Reflection.FieldInfo f = mb.GetType().GetField("currentText", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            return f == null ? "<no field>" : (string)f.GetValue(mb) ?? "<none>";
+        }
+        return "<plugin not found>";
+    }
+
     void Try(string what, Action a)
     {
         try { a(); }
@@ -124,7 +135,14 @@ public class Harness : BaseUnityPlugin
         yield return Wait(7f);
         W("SCENE " + SceneManager.GetActiveScene().name);
         Dump("main");
+        W("SUBTITLE @7s: " + CurrentSubtitle());
         yield return Shot("04_main");
+        yield return Wait(7.5f);
+        W("SUBTITLE @15s: " + CurrentSubtitle());
+        yield return Shot("04b_radio");
+        yield return Wait(12f);
+        W("SUBTITLE @27s: " + CurrentSubtitle());
+        yield return Shot("04c_radio");
 
         CanvasGroup brief = GameObject.Find("BriefingCanvas").GetComponent<CanvasGroup>();
         brief.alpha = 1f;

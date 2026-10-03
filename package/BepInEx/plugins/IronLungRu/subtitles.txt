@@ -1,0 +1,25 @@
+# Субтитры к голосу по радио. Читает плагин IronLungRu.
+# [ИмяАудиоклипа] — дальше строки «начало конец текст» (секунды от начала клипа, через пробел).
+# Проверить тайминги можно, открыв клип в любом аудиоредакторе; оригинал — в комментариях.
+
+[RadioChatter]
+# Beginning descent.
+1.6 3.4 Начинаем погружение.
+# Cruising depth in roughly 40 seconds. Standby.
+5.4 9.0 Крейсерская глубина примерно через сорок секунд. Ожидайте.
+# I'm seeing some voltage irregularities in the instruments,
+13.6 16.3 Вижу скачки напряжения в приборах,
+# so keep an eye out for sparks or flames or anything like that.
+16.3 20.6 так что следите, нет ли искр, огня или чего-то в этом роде.
+# Approaching maximum depth.
+23.9 26.2 Приближаемся к максимальной глубине.
+# The hull's feeling it, but it's still holding strong.
+26.2 29.9 Корпусу тяжело, но он пока держится крепко.
+# Closing porthole shielding.
+31.4 34.2 Закрываем заслонку иллюминатора.
+# We're starting to lose radio signal.
+39.9 41.6 Связь начинает пропадать.
+# You'll be at cruising depth soon, so be careful.
+41.6 45.6 Скоро вы будете на крейсерской глубине, так что будьте осторожны.
+# You're on your own.
+45.8 47.8 Дальше вы сами.

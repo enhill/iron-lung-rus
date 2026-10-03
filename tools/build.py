@@ -90,6 +90,37 @@ def check_xunity_file(path):
                                     "проверьте, что это сделано намеренно")
 
 
+def check_subtitles(path):
+    """subtitles.txt: [ClipName] headers, then lines «start end text» in seconds."""
+    if not os.path.isfile(path):
+        return
+    clip, last_end = None, 0.0
+    with open(path, encoding="utf-8-sig") as f:
+        for n, raw in enumerate(f, 1):
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            where = f"{rel(path)}:{n}"
+            if line.startswith("[") and line.endswith("]"):
+                clip, last_end = line[1:-1], 0.0
+                continue
+            parts = line.split(" ", 2)
+            try:
+                start, end = float(parts[0]), float(parts[1])
+            except (ValueError, IndexError):
+                err(where, "ожидается «начало конец текст», например «1.6 3.4 Начинаем погружение.»")
+                continue
+            if clip is None:
+                err(where, "перед репликами нужна строка с именем клипа, например [RadioChatter]")
+            elif len(parts) < 3 or not parts[2].strip():
+                err(where, "нет текста реплики")
+            elif end <= start:
+                err(where, "конец реплики должен быть позже начала")
+            elif start < last_end:
+                err(where, "реплика начинается раньше, чем закончилась предыдущая")
+            last_end = max(last_end, end)
+
+
 # ---------------------------------------------------------------- terminal sources
 
 def read_sections(path):
@@ -274,6 +305,7 @@ def main():
     for fn in sorted(os.listdir(os.path.join(PACKAGE, TEXT_DIR))):
         if fn.endswith(".txt") and not fn.startswith("_") and fn != "resizer.txt":
             check_xunity_file(os.path.join(PACKAGE, TEXT_DIR, fn))
+    check_subtitles(os.path.join(PACKAGE, PLUGIN_DIR, "subtitles.txt"))
     terminal_txt, queries_txt = build_terminal()
     for w in warnings:
         print("предупреждение:", w)

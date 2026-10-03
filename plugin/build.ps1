@@ -16,7 +16,8 @@ foreach ($p in @($csc, $managed, (Join-Path $core "BepInEx.dll"))) {
 
 $refs = @("mscorlib.dll", "netstandard.dll", "System.dll", "System.Core.dll", "UnityEngine.dll",
           "UnityEngine.CoreModule.dll", "UnityEngine.TextCoreModule.dll", "UnityEngine.TextRenderingModule.dll",
-          "UnityEngine.UI.dll", "UnityEngine.UIModule.dll", "Unity.TextMeshPro.dll", "Assembly-CSharp.dll") |
+          "UnityEngine.UI.dll", "UnityEngine.UIModule.dll", "UnityEngine.IMGUIModule.dll", "UnityEngine.AudioModule.dll", "UnityEngine.ImageConversionModule.dll",
+          "Unity.TextMeshPro.dll", "Assembly-CSharp.dll") |
         ForEach-Object { "-r:" + (Join-Path $managed $_) }
 $refs += "-r:" + (Join-Path $core "BepInEx.dll")
 $refs += "-r:" + (Join-Path $core "0Harmony.dll")

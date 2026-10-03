@@ -4,18 +4,23 @@
 //    и заранее загружает в него весь русский алфавит.
 // 2) Добавляет русские варианты запросов в терминал подлодки (список в queries.txt рядом с плагином).
 // 3) Отключает перенос строк у кнопок главного меню, чтобы «Новая игра» не разваливалась на две строки.
+// 4) Показывает субтитры к голосу по радио (тексты и тайминги — в subtitles.txt рядом с плагином).
+// 5) Подменяет текстуры: textures/<имя>.png загружается в текстуру игры с тем же именем,
+//    sprites/<имя>.png заменяет спрайт интерфейса (так можно поставить картинку большего разрешения).
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using BepInEx;
+using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-[BepInPlugin("ru.ironlung.rusfix", "Iron Lung RU Fix", "1.0.0")]
+[BepInPlugin("ru.ironlung.rusfix", "Iron Lung RU Fix", "1.1.0")]
 public class IronLungRu : BaseUnityPlugin
 {
     const string Glyphs =
@@ -26,10 +31,30 @@ public class IronLungRu : BaseUnityPlugin
     static readonly HashSet<int> FixedFonts = new HashSet<int>();
     static readonly string[] MenuButtons = { "Start", "Load", "Settings", "Quit" };
 
+    class Cue
+    {
+        public float Start, End;
+        public string Text;
+    }
+
+    static readonly Dictionary<string, List<Cue>> Subtitles = new Dictionary<string, List<Cue>>();
+    readonly List<AudioSource> voiced = new List<AudioSource>();
+    ConfigEntry<bool> subtitlesOn;
+    ConfigEntry<float> subtitleScale;
+    string currentText;
+    GUIStyle subtitleStyle;
+    static string pluginDir;
+    static readonly Dictionary<string, Sprite> SpriteCache = new Dictionary<string, Sprite>();
+
     void Awake()
     {
         Log = Logger;
-        LoadAliases(Path.Combine(Path.GetDirectoryName(Info.Location), "queries.txt"));
+        string dir = Path.GetDirectoryName(Info.Location);
+        pluginDir = dir;
+        LoadAliases(Path.Combine(dir, "queries.txt"));
+        LoadSubtitles(Path.Combine(dir, "subtitles.txt"));
+        subtitlesOn = Config.Bind("Subtitles", "Enabled", true, "Показывать субтитры к голосу по радио");
+        subtitleScale = Config.Bind("Subtitles", "Scale", 1.0f, "Размер субтитров (1.0 — обычный)");
         Harmony harmony = new Harmony("ru.ironlung.rusfix");
         harmony.Patch(AccessTools.Method(typeof(TerminalScript), "Start"),
             null, new HarmonyMethod(typeof(IronLungRu).GetMethod("TerminalStartPostfix")));
@@ -40,6 +65,130 @@ public class IronLungRu : BaseUnityPlugin
     {
         FixFonts();
         if (scene.name == "Menu") FixMenuButtons();
+        ReplaceTextures();
+        voiced.Clear();
+        foreach (AudioSource src in Resources.FindObjectsOfTypeAll<AudioSource>())
+            if (src.gameObject.scene.IsValid() && src.clip != null && Subtitles.ContainsKey(src.clip.name))
+                voiced.Add(src);
+    }
+
+    void Update()
+    {
+        currentText = null;
+        if (!subtitlesOn.Value) return;
+        foreach (AudioSource src in voiced)
+        {
+            if (src == null || src.clip == null || !src.isPlaying) continue;
+            List<Cue> cues;
+            if (!Subtitles.TryGetValue(src.clip.name, out cues)) continue;
+            float t = src.time;
+            foreach (Cue c in cues)
+                if (t >= c.Start && t < c.End) { currentText = c.Text; return; }
+        }
+    }
+
+    void OnGUI()
+    {
+        if (string.IsNullOrEmpty(currentText)) return;
+        if (subtitleStyle == null)
+        {
+            subtitleStyle = new GUIStyle(GUI.skin.label);
+            subtitleStyle.alignment = TextAnchor.LowerCenter;
+            subtitleStyle.wordWrap = true;
+            subtitleStyle.fontStyle = FontStyle.Italic;
+        }
+        subtitleStyle.fontSize = Mathf.Max(14, (int)(Screen.height / 30f * subtitleScale.Value));
+        float w = Screen.width * 0.7f;
+        Rect r = new Rect((Screen.width - w) / 2f, Screen.height * 0.62f, w, Screen.height * 0.25f);
+        int o = Mathf.Max(1, subtitleStyle.fontSize / 14);
+        subtitleStyle.normal.textColor = new Color(0f, 0f, 0f, 0.9f);
+        for (int dx = -o; dx <= o; dx += o)
+            for (int dy = -o; dy <= o; dy += o)
+                if (dx != 0 || dy != 0) GUI.Label(new Rect(r.x + dx, r.y + dy, r.width, r.height), currentText, subtitleStyle);
+        subtitleStyle.normal.textColor = new Color(0.86f, 0.95f, 0.86f, 1f);
+        GUI.Label(r, currentText, subtitleStyle);
+    }
+
+    static void ReplaceTextures()
+    {
+        string texDir = Path.Combine(pluginDir, "textures");
+        if (Directory.Exists(texDir))
+        {
+            Dictionary<string, string> files = new Dictionary<string, string>();
+            foreach (string f in Directory.GetFiles(texDir, "*.png")) files[Path.GetFileNameWithoutExtension(f)] = f;
+            foreach (Texture2D tex in Resources.FindObjectsOfTypeAll<Texture2D>())
+            {
+                string f;
+                if (tex == null || !files.TryGetValue(tex.name, out f)) continue;
+                try
+                {
+                    FilterMode filter = tex.filterMode;
+                    TextureWrapMode wrap = tex.wrapMode;
+                    tex.LoadImage(File.ReadAllBytes(f));
+                    tex.filterMode = filter;
+                    tex.wrapMode = wrap;
+                    Log.LogInfo("Texture replaced: " + tex.name);
+                }
+                catch (Exception e) { Log.LogWarning("Texture " + tex.name + ": " + e.Message); }
+            }
+        }
+        string spriteDir = Path.Combine(pluginDir, "sprites");
+        if (!Directory.Exists(spriteDir)) return;
+        foreach (Image img in Resources.FindObjectsOfTypeAll<Image>())
+        {
+            if (img == null || img.sprite == null || img.sprite.texture == null) continue;
+            string name = img.sprite.texture.name;
+            string f = Path.Combine(spriteDir, name + ".png");
+            if (!File.Exists(f)) continue;
+            Sprite sprite;
+            if (!SpriteCache.TryGetValue(name, out sprite) || sprite == null)
+            {
+                Texture2D t = new Texture2D(2, 2, TextureFormat.RGBA32, true);
+                t.LoadImage(File.ReadAllBytes(f));
+                t.name = name + "_ru";
+                t.filterMode = FilterMode.Trilinear;
+                t.wrapMode = TextureWrapMode.Clamp;
+                Sprite old = img.sprite;
+                sprite = Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f),
+                    old.pixelsPerUnit * t.width / old.rect.width);
+                sprite.name = old.name;
+                SpriteCache[name] = sprite;
+            }
+            img.sprite = sprite;
+            Log.LogInfo("Sprite replaced: " + name + " (" + sprite.texture.width + "x" + sprite.texture.height + ")");
+        }
+    }
+
+    static void LoadSubtitles(string path)
+    {
+        if (!File.Exists(path)) return;
+        List<Cue> cues = null;
+        foreach (string raw in File.ReadAllLines(path, Encoding.UTF8))
+        {
+            string line = raw.Trim();
+            if (line.Length == 0 || line.StartsWith("#")) continue;
+            if (line.StartsWith("[") && line.EndsWith("]"))
+            {
+                cues = new List<Cue>();
+                Subtitles[line.Substring(1, line.Length - 2)] = cues;
+                continue;
+            }
+            string[] parts = line.Split(new char[] { ' ' }, 3);
+            float start, end;
+            if (cues == null || parts.Length < 3 ||
+                !float.TryParse(parts[0], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out start) ||
+                !float.TryParse(parts[1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out end))
+            {
+                Log.LogWarning("subtitles.txt: bad line: " + line);
+                continue;
+            }
+            Cue c = new Cue();
+            c.Start = start; c.End = end; c.Text = parts[2];
+            cues.Add(c);
+        }
+        int n = 0;
+        foreach (List<Cue> l in Subtitles.Values) n += l.Count;
+        Log.LogInfo("Subtitles: " + n + " lines for " + Subtitles.Count + " clip(s)");
     }
 
     static void FixMenuButtons()
