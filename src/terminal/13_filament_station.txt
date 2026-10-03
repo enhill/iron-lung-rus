@@ -1,0 +1,29 @@
+# Статья терминала №13: Filament Station
+# Английские запросы (работают всегда): filament, filament station
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Filament Station
+[body]
+Filament Station was the fourth and largest space station in <color=red>the c.o.i</color> until 362 <color=red>EIC</color>, when tensions between the <color=red>c.o.i</color> and <color=red>eden</color> erupted in a 9 day battle on the station.  The conflict battle ended unresolved when Eden troops resorted to sabotaging the station's recator, resulting in a critical breach.
+
+<redacted>
+
+The breach left Filament Station uninhabitable due to high levels of radiation and it has sat empty since.  Prisoners taken during the conflict have been undergoing <color=red>conviction realization</color> in the years since, with the final ones expected to repay their debts and integrate into <color=red>c.o.i</color> society by 381 <color=red>EIC</color>
+
+=== ЗАПРОСЫ ===
+филамент
+станция филамент
+станцию филамент
+
+=== ТЕКСТ ===
+[запись]
+Станция «Филамент»
+[содержание]
+Станция «Филамент» была четвёртой и крупнейшей космической станцией <color=red>Железного Союза</color> вплоть до 362 года <color=red>ЭМК</color>, когда противостояние <color=red>Железного Союза</color> и <color=red>Эдема</color> вылилось в девятидневное сражение на станции. Бой закончился ничем: войска Эдема прибегли к диверсии на реакторе станции, что привело к разрушению его защитной оболочки.
+
+<засекречено>
+
+Из-за высокого уровня радиации станция «Филамент» стала непригодной для жизни и с тех пор пустует. Пленные, захваченные в ходе конфликта, все эти годы проходят <color=red>реализацию приговора</color>; ожидается, что последние из них искупят свой долг и вольются в общество Железного Союза к 381 году <color=red>ЭМК</color>.

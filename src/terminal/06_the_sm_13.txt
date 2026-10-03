@@ -1,0 +1,31 @@
+# Статья терминала №6: The SM-13
+# Английские запросы (работают всегда): sm13, the sm13, iron lung, the iron lung
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+The SM-13
+[body]
+One of four in-service underwater crafts fashioned by <color=red>the c.o.i</color> for use in <color=red>conviction realization</color> in the <color=red>blood oceans</color>.  It is designed for deep liquid photography and analysis.
+<redacted>
+All rumors of the sm-13 and similar crafts being used for so-called mob justice by way of forced suffocation or otherwise have been proven false.
+
+=== ЗАПРОСЫ ===
+см13
+см 13
+sm 13
+железное лёгкое
+железное легкое
+лёгкое
+подлодка
+лодка
+субмарина
+
+=== ТЕКСТ ===
+[запись]
+SM-13
+[содержание]
+Один из четырёх находящихся в эксплуатации подводных аппаратов, созданных <color=red>Железным Союзом</color> для <color=red>реализации приговоров</color> в <color=red>кровавых океанах</color>. Предназначен для глубоководной фотосъёмки и анализа.
+<засекречено>
+Все слухи о том, что SM-13 и подобные аппараты используются для так называемого самосуда — путём принудительного удушения или иными способами, — признаны ложными.

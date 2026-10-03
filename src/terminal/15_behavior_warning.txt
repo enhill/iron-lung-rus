@@ -1,0 +1,41 @@
+# Статья терминала №15: behavior warning
+# Английские запросы (работают всегда): fuck, bitch, ass, cunt, shit, penis, boobs, titties, dick, balls, butthole, cum, poop
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+behavior warning
+[body]
+<color=red>The c.o.i</color> expects everyone in the collective to maintain a standard of polite and acceptable behavior.  Please consider your language and attitude before interacting.  Thank you.
+
+=== ЗАПРОСЫ ===
+блять
+бля
+блядь
+сука
+хуй
+хуйня
+пизда
+пиздец
+ебать
+нахуй
+ебал
+жопа
+говно
+дерьмо
+член
+сиськи
+пидор
+мудак
+залупа
+хер
+срать
+попа
+задница
+
+=== ТЕКСТ ===
+[запись]
+предупреждение о поведении
+[содержание]
+<color=red>Железный Союз</color> ожидает от каждого члена коллектива вежливого и пристойного поведения. Пожалуйста, следите за своими словами и тоном. Спасибо.

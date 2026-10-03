@@ -1,0 +1,24 @@
+# Статья терминала №5: The Consolidation of Iron
+# Английские запросы (работают всегда): coi, the coi, the consolidation of iron
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+The Consolidation of Iron
+[body]
+The Consolidation of Iron, or c.o.i, is a brotherhood of three space stations and two spacecrafts, found on the principle of collectivism and ruled by the popular vote of all citizens (numbering 257 at the time of this entry).  Its name comes from the iron and steel materials its two main stations are constructed from, and the principle of unity and togetherness in the face of menace from other surrounding stations such as <color=red>eden</color>.
+
+=== ЗАПРОСЫ ===
+железный союз
+железного союза
+железным союзом
+железном союзе
+союз
+жс
+
+=== ТЕКСТ ===
+[запись]
+Железный Союз
+[содержание]
+Железный Союз (c.o.i, от англ. Consolidation of Iron) — братство трёх космических станций и двух кораблей, основанное на принципах коллективизма и управляемое всеобщим голосованием граждан (на момент составления записи их насчитывается 257). Название отсылает к железу и стали, из которых построены две его главные станции, а также к принципу единства и сплочённости перед лицом угрозы со стороны соседних станций, таких как <color=red>Эдем</color>.

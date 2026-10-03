@@ -1,0 +1,27 @@
+# Статья терминала №1: The Quiet Rapture
+# Английские запросы (работают всегда): the quiet rapture, quiet rapture, rapture
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+The Quiet Rapture
+[body]
+In 357 <color=red>EIC</color>, without any prior warning, radio contact with our respective planets was suddenly cut.  Nobody can recall having visual contact with any planets when the incident occured, or experiencing any other unusual phenomena, so it's uncertain what exactly might have happened.  Upon investigation, it was observed independently by several stations that where there had previously been planets, nothing remained.  Further investigation over the following months revealed that all known planets with sentient life, floura and fauna, a habitable atmosphere, or any sort of natural resources were likewise gone, along with all known stars.  The only celestial bodies that have been found since are either uninhabitable moons or asteriods.
+
+Many theories have been proposed for this disaster, including religious interpretations of it as a literal rapture, some unknown quantum anomaly, or something more cosmic and sinister.  There are no concrete answers yet.
+
+=== ЗАПРОСЫ ===
+тихое вознесение
+тихого вознесения
+тихим вознесением
+вознесение
+вознесения
+
+=== ТЕКСТ ===
+[запись]
+Тихое Вознесение
+[содержание]
+В 357 году <color=red>ЭМК</color> без всякого предупреждения внезапно оборвалась радиосвязь со всеми нашими планетами. Никто не припомнит, чтобы в момент инцидента видел какую-либо планету или замечал иные необычные явления, поэтому что именно произошло, до сих пор неясно. В ходе расследования несколько станций независимо друг от друга установили, что там, где прежде находились планеты, не осталось ничего. Дальнейшие исследования в последующие месяцы показали, что так же бесследно исчезли все известные планеты, где были разумная жизнь, флора и фауна, пригодная для дыхания атмосфера или хоть какие-то природные ресурсы, а вместе с ними и все известные звёзды. С тех пор удалось обнаружить лишь непригодные для жизни луны и астероиды.
+
+Об этой катастрофе выдвинуто множество теорий: от религиозных толкований, видящих в ней буквальное Вознесение, до неизвестной квантовой аномалии или чего-то куда более космического и зловещего. Определённых ответов пока нет.

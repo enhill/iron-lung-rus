@@ -1,0 +1,38 @@
+name: Исправление перевода
+description: Опечатка, неточность или неудачная фраза
+title: "[Перевод] "
+labels: ["перевод"]
+body:
+  - type: dropdown
+    id: where
+    attributes:
+      label: Где в игре
+      options:
+        - Главное меню или настройки
+        - Вступление
+        - Брифинг
+        - Подсказки, карта
+        - Терминал
+        - Записка
+        - Финал
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Как сейчас
+      description: Скопируйте фразу или приложите скриншот (можно просто вставить картинку сюда).
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Как лучше
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Почему
+      description: "Необязательно. Например: «в оригинале сказано …» или «так не говорят»."

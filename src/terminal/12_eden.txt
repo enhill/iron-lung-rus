@@ -1,0 +1,25 @@
+# Статья терминала №12: Eden
+# Английские запросы (работают всегда): eden, eden station
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Eden
+[body]
+Space station Eden is the largest man-made structure that still exists in the wake of <color=red>the quiet rapture</color>.  It was formerly the main station for <color=red>Mars</color> and the populace still maintain a strong sense of Martian patriotism and independence, making them a constant threat to the sanctity and security of <color=red>the c.o.i</color>.  It has a current population of 468 and has the only known remaining trees in its interior garden.
+
+<color=red>The c.o.i</color> considers Eden a threat to all collective well-being after their attack on <color=red>filament station</color>.
+
+=== ЗАПРОСЫ ===
+эдем
+эдема
+станция эдем
+
+=== ТЕКСТ ===
+[запись]
+Эдем
+[содержание]
+Космическая станция Эдем — крупнейшее из рукотворных сооружений, уцелевших после <color=red>Тихого Вознесения</color>. Прежде это была главная станция <color=red>Марса</color>, и её жители до сих пор сохраняют сильный марсианский патриотизм и стремление к независимости, что делает их постоянной угрозой неприкосновенности и безопасности <color=red>Железного Союза</color>. Сейчас население станции составляет 468 человек; в её внутреннем саду растут единственные известные уцелевшие деревья.
+
+<color=red>Железный Союз</color> считает Эдем угрозой всеобщему благополучию коллектива после нападения на <color=red>станцию «Филамент»</color>.

@@ -1,0 +1,29 @@
+﻿//Главное меню//
+A game by David Szymanski=Игра Дэвида Шимански\nПеревод: Ниорк Переведун и Enhill
+New=Новая игра
+Continue=Продолжить
+Settings=Настройки
+Quit=Выход
+More Games=Больше игр
+Social Media=Соцсети
+
+//Настройки//
+//ВАЖНО: игра сверяет текст кнопок со словами on/off, поэтому в AutoTranslatorConfig.ini должно быть TextGetterCompatibilityMode=True
+Vsync=VSync
+Fullscreen=Полный экран
+Resolution\n=Разрешение\n
+Sensitivity=Чувствительность
+Volume\n=Громкость\n
+Invert Y=Инверсия Y
+FOV (vert)=Угол обзора
+Cancel\n=Отмена\n
+Apply=Принять
+on=вкл
+off=выкл
+On=вкл
+
+//В игре//
+Saving Progress...=Сохранение...
+Quit game (y,n)?=Выйти из игры? (y/n)
+[W,A,D,S] move\n[MOUSE{{A}}] interact\n[TAB] map\n[B] briefing=[W,A,S,D] движение\n[ЛКМ] взаимодействие\n[TAB] карта\n[B] брифинг
+Hover mouse over nodes for more information=Наведите курсор на точку для подробностей

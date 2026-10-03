@@ -1,0 +1,21 @@
+# Статья терминала №11: Mars
+# Английские запросы (работают всегда): mars
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Mars
+[body]
+The fourth planet from the sun, and the site first off-Earth colony in 1992 AD (0 <color=red>EIC</color>), Mars was most populated planet in the solar system before 'the quiet rapture', surpassing Earth in 143 <color=red>EIC</color>.  Now all that remains of Mars' former glory is the <color=red>eden</color> space station.
+
+=== ЗАПРОСЫ ===
+марс
+марса
+марсе
+
+=== ТЕКСТ ===
+[запись]
+Марс
+[содержание]
+Четвёртая планета от Солнца, место основания первой внеземной колонии в 1992 году н. э. (0 год <color=red>ЭМК</color>). До Тихого Вознесения Марс был самой густонаселённой планетой Солнечной системы, обогнав Землю в 143 году <color=red>ЭМК</color>.  Сегодня от былого величия Марса осталась лишь космическая станция <color=red>Эдем</color>.

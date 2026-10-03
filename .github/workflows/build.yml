@@ -1,0 +1,58 @@
+name: Сборка
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Кэш BepInEx и XUnity
+        uses: actions/cache@v4
+        with:
+          path: build/cache
+          key: upstream-${{ hashFiles('tools/build.py') }}
+
+      - name: Проверка файлов и сборка архива
+        run: python tools/build.py --zip
+
+      - name: Архив для проверки в игре
+        uses: actions/upload-artifact@v4
+        with:
+          name: IronLung_RUS
+          path: dist/IronLung_RUS.zip
+
+      - name: Публикация релиза
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="$(cat VERSION | tr -d '[:space:]')"
+          if [ "v$VERSION" != "$GITHUB_REF_NAME" ]; then
+            echo "Тег $GITHUB_REF_NAME не совпадает с файлом VERSION ($VERSION)"; exit 1
+          fi
+          python - "$VERSION" > notes.md <<'EOF'
+          import re, sys
+          text = open("CHANGELOG.md", encoding="utf-8").read()
+          m = re.search(r"^## " + re.escape(sys.argv[1]) + r"[^\n]*\n(.*?)(?=^## |\Z)", text, re.M | re.S)
+          print(m.group(1).strip() if m else "")
+          EOF
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/IronLung_RUS.zip --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/IronLung_RUS.zip \
+              --title "Русификатор Iron Lung $VERSION" --notes-file notes.md
+          fi

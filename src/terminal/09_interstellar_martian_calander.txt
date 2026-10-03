@@ -1,0 +1,22 @@
+# Статья терминала №9: Interstellar Martian Calander
+# Английские запросы (работают всегда): imc, interstellar martian calander
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Interstellar Martian Calander
+[body]
+Known commonly as IMC, the Interstellar Martian Calander is an alternative to the more widely used <color=red>EIC</color>.  It was poised to be officially adopted by <color=red>Mars</color> before <color=red>the quiet rapture</color>.  Whereas <color=red>EIC</color> is based on the rotation of Earth, IMC is based on the rotation of Mars, meaning that one year in IMC is about 1.88 years in IMC.  Currently only <color=red>Eden</color>, a former Martian space station, uses IMC.
+
+=== ЗАПРОСЫ ===
+ммк
+межзвёздный марсианский календарь
+марсианский календарь
+календарь
+
+=== ТЕКСТ ===
+[запись]
+Межзвёздный марсианский календарь
+[содержание]
+Межзвёздный марсианский календарь, обычно сокращаемый до ММК, — альтернатива более распространённой <color=red>ЭМК</color>. Его собирались официально принять на <color=red>Марсе</color> незадолго до <color=red>Тихого Вознесения</color>. Если <color=red>ЭМК</color> основана на обращении Земли, то ММК — на обращении Марса, поэтому один год ММК равен примерно 1,88 года ЭМК. Сейчас ММК пользуется только <color=red>Эдем</color> — бывшая марсианская космическая станция.

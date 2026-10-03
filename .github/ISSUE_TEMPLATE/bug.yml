@@ -1,0 +1,33 @@
+name: Русификатор не работает
+description: Игра на английском, квадратики вместо букв, вылеты
+title: "[Ошибка] "
+labels: ["ошибка"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что происходит
+      description: Что вы видите и на каком экране. Скриншот очень помогает.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Где играете
+      options:
+        - Windows
+        - Steam Deck / Linux (Proton)
+        - Другое
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия русификатора
+      description: Указана в файле README_RUS.txt в папке игры.
+      placeholder: "2.0.0"
+  - type: textarea
+    id: log
+    attributes:
+      label: Лог
+      description: Перетащите сюда файл BepInEx\LogOutput.log из папки игры. Если его нет — напишите об этом, это тоже подсказка.

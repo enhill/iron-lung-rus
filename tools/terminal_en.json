@@ -1,0 +1,150 @@
+{
+ "_comment": "Original English strings from Iron Lung 2.3 (TerminalScript). Used as translation keys. Do not edit.",
+ "header": "<c.o.i informational terminal>\nThis is a local database.  Be sure to update before each descent.\nLast updated today [5/378]",
+ "responses": [
+  "unknown query",
+  "all cheats cleared",
+  "activated 'markiplier mode'",
+  "now you can see!",
+  "noir mode activated",
+  "rave mode activated",
+  "speaker activated",
+  "Life vest activated"
+ ],
+ "entries": [
+  {
+   "text": "[entry] \nThe Quiet Rapture\n[body]\nIn 357 <color=red>EIC</color>, without any prior warning, radio contact with our respective planets was suddenly cut.  Nobody can recall having visual contact with any planets when the incident occured, or experiencing any other unusual phenomena, so it's uncertain what exactly might have happened.  Upon investigation, it was observed independently by several stations that where there had previously been planets, nothing remained.  Further investigation over the following months revealed that all known planets with sentient life, floura and fauna, a habitable atmosphere, or any sort of natural resources were likewise gone, along with all known stars.  The only celestial bodies that have been found since are either uninhabitable moons or asteriods.\n\nMany theories have been proposed for this disaster, including religious interpretations of it as a literal rapture, some unknown quantum anomaly, or something more cosmic and sinister.  There are no concrete answers yet.",
+   "queries": [
+    "the quiet rapture",
+    "quiet rapture",
+    "rapture"
+   ]
+  },
+  {
+   "text": "[entry] \nMoon AT-5\n[body]\n<redacted>\nThis entry has been redacted.  See <color=red>blood oceans</color> for more information.",
+   "queries": [
+    "at-5",
+    "at5",
+    "moon at-5",
+    "moon at5"
+   ]
+  },
+  {
+   "text": "[entry] \nBlood Oceans\n[body]\nAn unexplained phenomenon that has been identified on four separate moons since <color=red>The Quiet Rapture</color>.  <color=red>Moon at-5</color> and <color=red>Moon z-8</color> are the most notable locations as they are under the control of <color=red>the c.o.i</color>.  Enough research has been conducted on the blood itself to determine that it is indeed human blood, but we have not discovered where it comes from or how it keeps its liquid form.\n\nThe ocean on at-5 is of particular interest because\n<redacted>",
+   "queries": [
+    "blood ocean",
+    "blood oceans"
+   ]
+  },
+  {
+   "text": "[entry] \nMoon Z-8\n[body]\nThe site of one of four known <color=red>blood oceans</color> and one of two such moons under the control of <color=red>the c.o.i</color>.  \n<redacted>\nMoon z-8 has historically been used for the realization of c.o.i convictions, until the discovery of <color=red>Moon AT-5</color>. ",
+   "queries": [
+    "z8",
+    "z-8",
+    "moon z8",
+    "moon z-8"
+   ]
+  },
+  {
+   "text": "[entry] \nThe Consolidation of Iron\n[body]\nThe Consolidation of Iron, or c.o.i, is a brotherhood of three space stations and two spacecrafts, found on the principle of collectivism and ruled by the popular vote of all citizens (numbering 257 at the time of this entry).  Its name comes from the iron and steel materials its two main stations are constructed from, and the principle of unity and togetherness in the face of menace from other surrounding stations such as <color=red>eden</color>.",
+   "queries": [
+    "c.o.i",
+    "coi",
+    "the c.o.i",
+    "the coi",
+    "the consolidation of iron"
+   ]
+  },
+  {
+   "text": "[entry] \nThe SM-13\n[body]\nOne of four in-service underwater crafts fashioned by <color=red>the c.o.i</color> for use in <color=red>conviction realization</color> in the <color=red>blood oceans</color>.  It is designed for deep liquid photography and analysis.\n<redacted>\nAll rumors of the sm-13 and similar crafts being used for so-called mob justice by way of forced suffocation or otherwise have been proven false.",
+   "queries": [
+    "sm-13",
+    "sm13",
+    "the sm-13",
+    "the sm13",
+    "iron lung",
+    "the iron lung"
+   ]
+  },
+  {
+   "text": "[entry] \nconviction realization\n[body]\nA humane form of criminal justice used by <color=red>the c.o.i</color>, where crimes are repayed by rendering service to the general collective.  Often this is by performing surveys, maintenance, or other similarly beneficial tasks.\n<redacted>",
+   "queries": [
+    "conviction realization"
+   ]
+  },
+  {
+   "text": "[entry] \nThe SM-8\n[body]\nHopefully they don't redact this before updating the database.  What most people don't understand is that not all subs are built equal.  The sm-8 isn't a burner sub.  It really is for exploring and surveying blood oceans.  If they send you down in the iron lung they don't give a fuck if you come back, or if the sub comes back, because it's a pile of garbage and you're a piece of shit.  You come back with photos, great.  You sit down there and suffocate quietly, even better.  But if they send the sm-8 down, one of the scientists is piloting and they all expect them to return.  \n\nAnd now the sm-8 is in the blood ocean in pieces.  No, not \"hit a rock\" pieces or \"sprung a leak\" pieces.  It looks like something tore it up.  And the weirdest thing is that nobody else seems surprised.  we might have found the first planetary life since the rapture, and they're acting like it's no big deal.  I know you're next in line for realization in the iron lung, and usually that means you won't be seeing the stars again.  But they don't have a sm-8 anymore.  They have 3 burner subs, and a lot of curiosity about at-5.  And maybe that means you have a chance. ",
+   "queries": [
+    "sm-8",
+    "sm8",
+    "the sm-8",
+    "the sm8"
+   ]
+  },
+  {
+   "text": "[entry] \nInterstellar Martian Calander\n[body]\nKnown commonly as IMC, the Interstellar Martian Calander is an alternative to the more widely used <color=red>EIC</color>.  It was poised to be officially adopted by <color=red>Mars</color> before <color=red>the quiet rapture</color>.  Whereas <color=red>EIC</color> is based on the rotation of Earth, IMC is based on the rotation of Mars, meaning that one year in IMC is about 1.88 years in IMC.  Currently only <color=red>Eden</color>, a former Martian space station, uses IMC.",
+   "queries": [
+    "imc",
+    "i.m.c",
+    "interstellar martian calander"
+   ]
+  },
+  {
+   "text": "[entry] \nEpoch of Interplanetary Colonization\n[body]\nEpoch of Interplanetary Colonization, or EIC, is an interstellar calander standardization adopted with the establishment of the first off-Earth colony on <color=red>Mars</color> in 1992 AD (0 EIC).  It was and is the predominant calander used throughout the known galaxy, although before 'the quiet rapture' many debated switching over to a more standardized measurement of years.  IMC or <color=red>Interstellar martian calander</color> was especially popular owing to a large population residing on <color=red>Mars</color>.  After <color=red>the quiet rapture</color>, all stations and starship alliences still use EIC, aside from <color=red>Eden</color> which uses <color=red>IMC</color>. ",
+   "queries": [
+    "eic",
+    "e.i.c",
+    "epoch of interplanetary colonization"
+   ]
+  },
+  {
+   "text": "[entry] \nMars\n[body]\nThe fourth planet from the sun, and the site first off-Earth colony in 1992 AD (0 <color=red>EIC</color>), Mars was most populated planet in the solar system before 'the quiet rapture', surpassing Earth in 143 <color=red>EIC</color>.  Now all that remains of Mars' former glory is the <color=red>eden</color> space station.",
+   "queries": [
+    "mars"
+   ]
+  },
+  {
+   "text": "[entry] \nEden\n[body]\nSpace station Eden is the largest man-made structure that still exists in the wake of <color=red>the quiet rapture</color>.  It was formerly the main station for <color=red>Mars</color> and the populace still maintain a strong sense of Martian patriotism and independence, making them a constant threat to the sanctity and security of <color=red>the c.o.i</color>.  It has a current population of 468 and has the only known remaining trees in its interior garden.\n\n<color=red>The c.o.i</color> considers Eden a threat to all collective well-being after their attack on <color=red>filament station</color>.",
+   "queries": [
+    "eden",
+    "eden station"
+   ]
+  },
+  {
+   "text": "[entry] \nFilament Station\n[body]\nFilament Station was the fourth and largest space station in <color=red>the c.o.i</color> until 362 <color=red>EIC</color>, when tensions between the <color=red>c.o.i</color> and <color=red>eden</color> erupted in a 9 day battle on the station.  The conflict battle ended unresolved when Eden troops resorted to sabotaging the station's recator, resulting in a critical breach.\n\n<redacted>\n\nThe breach left Filament Station uninhabitable due to high levels of radiation and it has sat empty since.  Prisoners taken during the conflict have been undergoing <color=red>conviction realization</color> in the years since, with the final ones expected to repay their debts and integrate into <color=red>c.o.i</color> society by 381 <color=red>EIC</color>",
+   "queries": [
+    "filament",
+    "filament station"
+   ]
+  },
+  {
+   "text": "[entry] \nDiscoveries on Moon AT-5\n[body]\n<redacted>\n",
+   "queries": [
+    "fish",
+    "monster",
+    "creature",
+    "sea life",
+    "alive",
+    "sea monster"
+   ]
+  },
+  {
+   "text": "[entry] \nbehavior warning\n[body]\n<color=red>The c.o.i</color> expects everyone in the collective to maintain a standard of polite and acceptable behavior.  Please consider your language and attitude before interacting.  Thank you.  ",
+   "queries": [
+    "fuck",
+    "bitch",
+    "ass",
+    "cunt",
+    "shit",
+    "penis",
+    "boobs",
+    "titties",
+    "dick",
+    "balls",
+    "butthole",
+    "cum",
+    "poop"
+   ]
+  }
+ ]
+}

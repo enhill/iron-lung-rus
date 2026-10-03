@@ -1,0 +1,32 @@
+# Статья терминала №3: Blood Oceans
+# Английские запросы (работают всегда): blood ocean, blood oceans
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Blood Oceans
+[body]
+An unexplained phenomenon that has been identified on four separate moons since <color=red>The Quiet Rapture</color>.  <color=red>Moon at-5</color> and <color=red>Moon z-8</color> are the most notable locations as they are under the control of <color=red>the c.o.i</color>.  Enough research has been conducted on the blood itself to determine that it is indeed human blood, but we have not discovered where it comes from or how it keeps its liquid form.
+
+The ocean on at-5 is of particular interest because
+<redacted>
+
+=== ЗАПРОСЫ ===
+кровавые океаны
+кровавый океан
+кровавых океанов
+кровавых океанах
+кровавого океана
+океан крови
+океаны крови
+кровь
+
+=== ТЕКСТ ===
+[запись]
+Кровавые океаны
+[содержание]
+Необъяснимое явление, обнаруженное после <color=red>Тихого Вознесения</color> на четырёх разных лунах. Наиболее известны <color=red>луна AT-5</color> и <color=red>луна Z-8</color>, поскольку они находятся под контролем <color=red>Железного Союза</color>. Исследования самой крови позволили установить, что это действительно человеческая кровь, однако откуда она берётся и почему остаётся жидкой, выяснить не удалось.
+
+Океан на AT-5 представляет особый интерес, поскольку
+<засекречено>

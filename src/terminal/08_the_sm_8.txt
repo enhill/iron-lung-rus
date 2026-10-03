@@ -1,0 +1,25 @@
+# Статья терминала №8: The SM-8
+# Английские запросы (работают всегда): sm8, the sm8
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+The SM-8
+[body]
+Hopefully they don't redact this before updating the database.  What most people don't understand is that not all subs are built equal.  The sm-8 isn't a burner sub.  It really is for exploring and surveying blood oceans.  If they send you down in the iron lung they don't give a fuck if you come back, or if the sub comes back, because it's a pile of garbage and you're a piece of shit.  You come back with photos, great.  You sit down there and suffocate quietly, even better.  But if they send the sm-8 down, one of the scientists is piloting and they all expect them to return.  
+
+And now the sm-8 is in the blood ocean in pieces.  No, not "hit a rock" pieces or "sprung a leak" pieces.  It looks like something tore it up.  And the weirdest thing is that nobody else seems surprised.  we might have found the first planetary life since the rapture, and they're acting like it's no big deal.  I know you're next in line for realization in the iron lung, and usually that means you won't be seeing the stars again.  But they don't have a sm-8 anymore.  They have 3 burner subs, and a lot of curiosity about at-5.  And maybe that means you have a chance.
+
+=== ЗАПРОСЫ ===
+см8
+см 8
+sm 8
+
+=== ТЕКСТ ===
+[запись]
+SM-8
+[содержание]
+Надеюсь, это не вымарают до обновления базы. Большинство не понимает, что подлодки бывают разные. SM-8 — не расходник. Она и правда создана для разведки и исследования кровавых океанов. Если тебя спускают на «Железном лёгком», им насрать, вернёшься ты или нет и вернётся ли сама лодка, потому что она — куча хлама, а ты — кусок дерьма. Вернёшься с фотками — отлично. Тихо задохнёшься там, внизу, — ещё лучше. Но если спускают SM-8, за штурвалом сидит кто-то из учёных, и все ждут, что пилот вернётся.  
+
+А теперь SM-8 лежит на дне кровавого океана по кускам. И нет, не «налетела на скалу» и не «дала течь». Похоже, её что-то разорвало. И самое странное — никто, кроме меня, не удивлён. Возможно, мы нашли первую планетарную жизнь со времён Вознесения, а они ведут себя так, будто ничего особенного не случилось. Я знаю, что ты следующий в очереди на реализацию в «Железном лёгком», и обычно это значит, что звёзд ты больше не увидишь. Но SM-8 у них больше нет. У них три одноразовые лодки и огромный интерес к AT-5. И, может быть, это значит, что у тебя есть шанс.

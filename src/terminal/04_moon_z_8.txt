@@ -1,0 +1,29 @@
+# Статья терминала №4: Moon Z-8
+# Английские запросы (работают всегда): z8, moon z8
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Moon Z-8
+[body]
+The site of one of four known <color=red>blood oceans</color> and one of two such moons under the control of <color=red>the c.o.i</color>.  
+<redacted>
+Moon z-8 has historically been used for the realization of c.o.i convictions, until the discovery of <color=red>Moon AT-5</color>.
+
+=== ЗАПРОСЫ ===
+з8
+з 8
+z 8
+луна з8
+луна z8
+луна з 8
+луна z 8
+
+=== ТЕКСТ ===
+[запись]
+Луна Z-8
+[содержание]
+Луна, на которой находится один из четырёх известных <color=red>кровавых океанов</color>, — одна из двух таких лун под контролем <color=red>Железного Союза</color>.  
+<засекречено>
+До открытия <color=red>луны AT-5</color> луна Z-8 традиционно использовалась для реализации приговоров Железного Союза.

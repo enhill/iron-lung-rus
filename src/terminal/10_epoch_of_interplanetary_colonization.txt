@@ -1,0 +1,21 @@
+# Статья терминала №10: Epoch of Interplanetary Colonization
+# Английские запросы (работают всегда): eic, epoch of interplanetary colonization
+# В «ЗАПРОСЫ» — русские варианты, по одному в строке: только буквы, цифры и пробелы.
+# В «ТЕКСТ» — перевод статьи. Красным (<color=red>…</color>) выделяйте темы, которые можно ввести как запрос.
+
+=== ОРИГИНАЛ (не редактировать, только для справки) ===
+[entry] 
+Epoch of Interplanetary Colonization
+[body]
+Epoch of Interplanetary Colonization, or EIC, is an interstellar calander standardization adopted with the establishment of the first off-Earth colony on <color=red>Mars</color> in 1992 AD (0 EIC).  It was and is the predominant calander used throughout the known galaxy, although before 'the quiet rapture' many debated switching over to a more standardized measurement of years.  IMC or <color=red>Interstellar martian calander</color> was especially popular owing to a large population residing on <color=red>Mars</color>.  After <color=red>the quiet rapture</color>, all stations and starship alliences still use EIC, aside from <color=red>Eden</color> which uses <color=red>IMC</color>.
+
+=== ЗАПРОСЫ ===
+эмк
+эпоха межпланетной колонизации
+летосчисление
+
+=== ТЕКСТ ===
+[запись]
+Эпоха межпланетной колонизации
+[содержание]
+Эпоха межпланетной колонизации, или ЭМК, — межзвёздный стандарт летосчисления, принятый с основанием первой внеземной колонии на <color=red>Марсе</color> в 1992 году н. э. (0 год ЭМК). Она была и остаётся основной системой летосчисления во всей известной галактике, хотя до Тихого Вознесения многие выступали за переход на более стандартизированный счёт лет. Особой популярностью пользовался ММК, или <color=red>Межзвёздный марсианский календарь</color>, — благодаря многочисленному населению <color=red>Марса</color>. После <color=red>Тихого Вознесения</color> все станции и союзы звездолётов по-прежнему ведут счёт по ЭМК, кроме <color=red>Эдема</color>, где принят <color=red>ММК</color>.
